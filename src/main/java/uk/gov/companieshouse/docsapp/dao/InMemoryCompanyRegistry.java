@@ -24,7 +24,8 @@ public class InMemoryCompanyRegistry implements CompanyRegistry {
                 {"My Company Ltd", "123456789", true, LocalDate.of(2010, 4, 20)},
                 {"Italian Company Ltd", "637399827", true, LocalDate.of(2008, 1, 5)},
                 {"We Are Partners LLP", "194745294", true, LocalDate.of(2023, 9, 1)},
-                {"No Profit Ltd", "946401763", true, LocalDate.of(2003, 3, 13)}
+                {"No Profit Ltd", "946401763", true, LocalDate.of(2003, 3, 13)},
+                {"New Company", "12912939", true, LocalDate.of(2002, 3, 9)}
         };
         for (Object[] row : companyData) {
             Company company = new LimitedCompany((String)row[0], (boolean)row[2]);
